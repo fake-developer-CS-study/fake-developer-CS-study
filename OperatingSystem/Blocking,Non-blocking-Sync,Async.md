@@ -208,7 +208,12 @@ Asynchronous+ Blocking 조합은 결국 다른 작업이 끝날 때를 기다려
 
 ![cpu-utilization2](https://user-images.githubusercontent.com/79291114/122693923-ba63ab00-d276-11eb-8a69-ee313e6e59ca.jpg)
 
+### 질문 답변
 
+Q1. Blocking / Non-Blocking 과 Synchronous / Asynchronous의 조합에서 polling과 callback에 대한 비교.
+
+→ (JAVA를 기준으로 한 설명)
+<img src="https://t1.daumcdn.net/cfile/tistory/99AD623D5CD18E521D">
 
 ---
 
