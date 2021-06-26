@@ -4,6 +4,8 @@
 
 **가짜 개발자 CS 스터디** 입니다! 발표한 내용과 발표 중에 나왔던 질문에 대한 답변을 모아 놓은 Repository 입니다.
 
+수정 사항이나 추가 사항이 있다면 `Commit 규칙`에 맞춰 PR 부탁드리겠습니다!
+
 
 
 ## 📝 발표 방식
@@ -46,7 +48,7 @@
 
 |                            발표자                            |                          발표 주제                           |    발표 날짜    |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :-------------: |
-| [![dev-splin](https://user-images.githubusercontent.com/79291114/122174982-3304e900-cebe-11eb-9a22-0fa57549dc56.jpg)](https://github.com/dev-splin) |                                                              |                 |
+| [![dev-splin](https://user-images.githubusercontent.com/79291114/122174982-3304e900-cebe-11eb-9a22-0fa57549dc56.jpg)](https://github.com/dev-splin) | [[운영체제] Blocking/Non-Blocking, Sync/Async](https://github.com/dev-splin/fake-developer-CS-study/blob/main/OperatingSystem/Blocking%2CNon-blocking-Sync%2CAsync.md) | 2021.06.22 (화) |
 | [![ArtistDeveloper](https://user-images.githubusercontent.com/79291114/122174981-326c5280-cebe-11eb-8e46-08b59a79bfbf.png)](https://github.com/ArtistDeveloper) | [[운영체제] 단기, 중기, 장기 스케쥴러](https://github.com/dev-splin/fake-developer-CS-study/blob/main/OperatingSystem/Scheduler.md) | 2021.06.17 (목) |
 | [![goretex404](https://user-images.githubusercontent.com/79291114/122174983-339d7f80-cebe-11eb-842e-ac965406fa8f.jpg)](https://github.com/goretex404) |                                                              |                 |
 | [![mrlee7](https://user-images.githubusercontent.com/79291114/122174985-339d7f80-cebe-11eb-9567-f01cf9f03383.png)](https://github.com/mrlee7) | [[운영체제] 프로세스 , 스레드](https://github.com/dev-splin/fake-developer-CS-study/blob/main/OperatingSystem/process%2Cthread.md) | 2021.06.15 (화) |
