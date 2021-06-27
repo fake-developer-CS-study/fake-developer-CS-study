@@ -24,6 +24,8 @@
    - 발표 자료 파일 이름은 발표 주제로 `ex) process,thread`
 6. 질문자가 질문에 대한 답변 + 이해한 내용을 정리하여 `PR(Pull Requests)`
    - 발표 자료나 질문의 답변에 대한 추가적인 내용이나 수정사항이 있다면 다른 스터디원(발표자 포함)이 발표자료가 올라간 후 PR 가능
+   
+   
 
 
 ### ❗ Commit 규칙
@@ -50,6 +52,6 @@
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :-------------: |
 | [![dev-splin](https://user-images.githubusercontent.com/79291114/122174982-3304e900-cebe-11eb-9a22-0fa57549dc56.jpg)](https://github.com/dev-splin) | [[운영체제] Blocking/Non-Blocking, Sync/Async](https://github.com/dev-splin/fake-developer-CS-study/blob/main/OperatingSystem/Blocking%2CNon-blocking-Sync%2CAsync.md) | 2021.06.22 (화) |
 | [![ArtistDeveloper](https://user-images.githubusercontent.com/79291114/122174981-326c5280-cebe-11eb-8e46-08b59a79bfbf.png)](https://github.com/ArtistDeveloper) | [[운영체제] 단기, 중기, 장기 스케쥴러](https://github.com/dev-splin/fake-developer-CS-study/blob/main/OperatingSystem/Scheduler.md) | 2021.06.17 (목) |
-| [![goretex404](https://user-images.githubusercontent.com/79291114/122174983-339d7f80-cebe-11eb-842e-ac965406fa8f.jpg)](https://github.com/goretex404) |                                                              |                 |
+| [![goretex404](https://user-images.githubusercontent.com/79291114/122174983-339d7f80-cebe-11eb-842e-ac965406fa8f.jpg)](https://github.com/goretex404) | [[운영체제] 캐시 지역성](https://github.com/dev-splin/fake-developer-CS-study/blob/main/OperatingSystem/Cache%20Locality.md) | 2021.06.25 (목) |
 | [![mrlee7](https://user-images.githubusercontent.com/79291114/122174985-339d7f80-cebe-11eb-9567-f01cf9f03383.png)](https://github.com/mrlee7) | [[운영체제] 프로세스 , 스레드](https://github.com/dev-splin/fake-developer-CS-study/blob/main/OperatingSystem/process%2Cthread.md) | 2021.06.15 (화) |
 
