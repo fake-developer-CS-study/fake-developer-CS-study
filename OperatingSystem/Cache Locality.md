@@ -4,7 +4,7 @@
 
 캐시 지역성을 알아보기전에 메모리 계층구조와 캐시 메모리에 대하여 간단히 알아봅시다.
 
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/97cad085-8b1d-41f3-b753-ff895578e06d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210626%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210626T090012Z&X-Amz-Expires=86400&X-Amz-Signature=837b089cfcf2d9d50b4d385b9e5ee04c34e61cfafa078a0bd48d34cef24f7aaa&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
+![image](https://user-images.githubusercontent.com/77064907/123545526-646d9680-d793-11eb-90ba-df4627b09352.png)
 
 메모리 계층구조
 
@@ -27,7 +27,7 @@
 - L2 : L1보다 큰 용량과 느린 속도를 가짐.
 - L3 : 가장 낮은 수준의 캐시. 10MB에서 64MB까지 다양.
 
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/46d2c16b-8e55-4409-b4be-74133b73b460/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210626%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210626T090921Z&X-Amz-Expires=86400&X-Amz-Signature=e9dcd20346afcb1c88282f5c13d42d009daf8a3519e33bb4eee60d6c5d9c89b2&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
+![image](https://user-images.githubusercontent.com/77064907/123545550-89faa000-d793-11eb-9cc8-b0b573ac012c.png)
 
 프로세서 Layout
 
@@ -38,16 +38,16 @@
 
 CPU에서 요청한 데이터가 캐시에 존재하는 경우를 캐시 히트(Hit)라고 한다. **히트 레이턴시는 히트가 발생해 캐싱된 데이터를 가져올 때 소요되는 시간을 의미한다**. 반면 요청한 데이터가 캐시에 존재하지 않는 경우를 캐시 미스(Miss)라고 하며, 미스 레이턴시는 미스가 발생해 상위 캐시에서 데이터를 가져오거나(L1 캐시에 데이터가 없어서 L2 캐시에서 데이터를 찾는 경우) 최종적으로 메모리에서 데이터를 가져올 때 소요되는 시간을 말한다.
 
-<img src ="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/20d61d46-aad8-4ce1-a171-158da0f2be3f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210626%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210626T091513Z&X-Amz-Expires=86400&X-Amz-Signature=c892633bcf3552494b23c93378cde3c4ada54a4e6900d0a31cc69a1f1ff812e2&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
+![image](https://user-images.githubusercontent.com/77064907/123545566-a26aba80-d793-11eb-82af-8d9eafe101d6.png)
 Cache Hit
 
-<img src ="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/942a6acd-dc65-4f9c-a990-499ef4e3e41e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210626%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210626T091535Z&X-Amz-Expires=86400&X-Amz-Signature=4118e97c37a87192ab0f4ef69c45ddba705e7e21e249e043484926784bd435d2&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
+![image](https://user-images.githubusercontent.com/77064907/123545584-bf06f280-d793-11eb-8a4a-f8fcb7409ac1.png)
 Cache Miss
 
 
 ### 평균 접근 시간(Average access time)은 다음과 같이 구한다.
 
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/17c42695-ae50-4ac6-82de-df739b6a7ab0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210626%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210626T091756Z&X-Amz-Expires=86400&X-Amz-Signature=2cd5dd7384bbeb4e6a24444ddc017f7b99bc6b1760edfe767569bb17958d66ba&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
+![image](https://user-images.githubusercontent.com/77064907/123545605-d5ad4980-d793-11eb-850d-882bd2309102.png)
 
 평균 접근 시간
 캐시의 성능을 높이기 위해서는 캐시의 크기를 줄여 히트 레이턴시를 줄이거나, 캐시의 크기를 늘려 미스 비율을 줄이거나, 더 빠른 캐시를 이용해 레이턴시를 줄이는 방법이 있다.
@@ -60,14 +60,14 @@ Cache Miss
 
 빠른 처리를 위해 CPU가 어떤 데이터를 원할 것인가를 예측하는 과정에서 적용된 특징
 
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/55d00e32-7501-4c48-af1a-2ccccca59a31/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210626%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210626T091930Z&X-Amz-Expires=86400&X-Amz-Signature=93c350abd6e66899c9ebe4e3e1310415505240e26b0505d3224acf7f673ec7c0&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
+![image](https://user-images.githubusercontent.com/77064907/123545621-ed84cd80-d793-11eb-9706-1d30055854f9.png)
 
 x : 실행시간 / y : 메모리 주소 영역
 
 1. **시간적 지역성(Temporal locality)** : 주어진 메모리 위치에 액세스 할 때 가까운 미래에 동일한 위치에 다시 액세스 할 가능성이 있습니다. 따라서 한번 사용된 메모리 위치는 바로 캐시메모리에 적재시키는(캐싱) 특성을 가지고 있습니다.
 2. **공간적 지역성(Spatial Locality)** : 관련 데이터를 서로 가깝게 배치하는 것을 의미합니다. 캐싱은 CPU뿐만 아니라 여러 수준에서 발생한다. 예를 들어, RAM에서 읽을 때 일반적으로 프로그램이 곧 해당 데이터를 요구하기 때문에 특별히 요청한 것보다 더 큰 메모리 청크를 가져옵니다. 
 
-    <img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/16e18540-8e32-45a5-b07e-eda098c35f93/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210626%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210626T091951Z&X-Amz-Expires=86400&X-Amz-Signature=737628939aec4f75067ba10c84867436c7eba7cfb378de043043110bef1d0632&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
+    ![image](https://user-images.githubusercontent.com/77064907/123545658-14db9a80-d794-11eb-8abd-2c7f476fbece.png)
 
     DB에서 많이 사용되는 B트리 자료구조 - 메모리 장치에서 행해지는 공간 지역성을 설명하기 위함
 
