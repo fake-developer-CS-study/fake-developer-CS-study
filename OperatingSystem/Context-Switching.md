@@ -222,6 +222,20 @@ Context Switching이 발생하게 되면 다음과 같은 Cost가 소요됩니�
 Context Switching 비용은 Process가 Thread보다 많이 듭니다. 그 이유는 Thread는 Stack 영역을 제외한 모든 메모리를 공유하기에 Context Switching 발생 시 Stack 영역만 변경하면 되기 때문입니다.
 
 
+### 질문 답변
+
+Q1. 컨텍스트 스위칭에서 오버헤드가 발생되는 과정 ?
+
+![image](https://user-images.githubusercontent.com/77064907/125072219-468a2500-e0f5-11eb-94ac-0bd707af6973.png)
+
+위의 그림을 보면 P0가 Excute에서 idle이 될 때 P1이 바로 Excute가 되지 않고 idle을 좀 더 하다가 Excute가 된다.
+
+그 이유는 P0 상태를 PCB에 저장하고 P1 상태를 PCB에서 가져오는 과정을 거치기 때문이다.
+
+이 상태(idle)에서는 CPU가 아무런 일도 하지 못하게 된다.
+
+따라서 컨텍스트 스위칭이 너무 잦으면 오버헤드가 발생하여(비용이 높아) 성능이 떨어진다. 
+
 
 ---
 
