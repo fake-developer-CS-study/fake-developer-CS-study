@@ -59,7 +59,7 @@ ex ) 전체 페이지 크기가 55kb 페이지
 
 -페이지,프레임 (10kb) 의 경우 내부단편화 5kb / 매핑 6회
 
--페이지,프레임 (4kb) 의 경우 내부단편화 3kb / 매핑 14회
+-페이지,프레임 (4kb) 의 경우 내부단편화 1kb / 매핑 14회
 
 
 *페이지 부재 : 사용하려는 페이지가 메모리에 적재가 안되어있다 = 페이지 폴트(페이지 부재) = miss
@@ -123,4 +123,4 @@ https://jhnyang.tistory.com/
 
 https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/OS#메모리-관리-전략
 
-https://github.com/WooVictory/Ready-For-Tech-Interview/blob/master/Operating System/Paging_Segmentation.md
+https://github.com/WooVictory/Ready-For-Tech-Interview/blob/master/Operating%20System/Paging_Segmentation.md
