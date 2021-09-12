@@ -58,7 +58,7 @@ REST의 가장 큰 특징중 하나는 상태를 유지하지 않는다는 것�
 
 - Cacheable
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/68f74436-12a0-41e2-a730-e8f27adbcfe2/스크린샷_2021-08-03_오전_8.17.32.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/68f74436-12a0-41e2-a730-e8f27adbcfe2/스크린샷_2021-08-03_오전_8.17.32.png)
+    ![](https://user-images.githubusercontent.com/54073761/132977573-13865797-f0c6-4da4-9a2a-6d11664c4ec5.png)
 
 HTTP 프로토콜 이라는 기존의 웹표준을 사용함에 따라, REST는 기존 웹의 인프라를 그대로 사용할 수 있습니다. 
 
@@ -121,7 +121,7 @@ ex) {domain}/users/
 
 ex) /users/1/put → put : /users/1
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aeac2c4d-236b-401b-bbb4-12ab0e83ece3/스크린샷_2021-08-03_오후_3.28.46.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aeac2c4d-236b-401b-bbb4-12ab0e83ece3/스크린샷_2021-08-03_오후_3.28.46.png)
+![](https://user-images.githubusercontent.com/54073761/132977612-b7ef5894-34aa-4de8-aa74-9bded37baf90.png)
 
 ### 
 
