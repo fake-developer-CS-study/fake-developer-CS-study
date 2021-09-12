@@ -4,7 +4,7 @@ CORS는 Cross-Origin Resource Sharing 줄인말입니다. 쉽게 생각하면 �
 
 특정 서비스 웹사이트 (service.co.kr)에서 API(api.****.me)를 사용하여 동작합니다.  서비스 웹사이트와 API서버는 도메인이 서로 다르기에 이런 경우 Ajax통신을 시도시 cross origin 오류가 발생합니다.
 
-![스크린샷 2021-08-18 오전 2.02.03.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0ab1236a-38b2-4886-8ed4-84793587a348/스크린샷_2021-08-18_오전_2.02.03.png)
+![](https://user-images.githubusercontent.com/54073761/132977683-724b6ba2-9e45-4138-9d4b-ccd5dc5a1709.png)
 
 이럴때 서버측에서 어떤 클라이언트를 허용할지에 대한 설정을 header를 넣어줘야합니다. header정보가 추가되면 통신이 허용되며 정상적으로 동작합니다. 이런 통신 방식을 CORS라고 합니다.
 
@@ -38,7 +38,7 @@ options 메소드는 생소한 사람들도 많을것입니다. 직접적으로 
 
 해더 설정이 잘되었는데도 cross origin 에러가 난다면 options를 먼저 확인하기를 권장 합니다.
 
-![스크린샷 2021-08-18 오전 2.03.10.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fc62b4c9-4126-4648-b3d5-eac527435d85/스크린샷_2021-08-18_오전_2.03.10.png)
+![](https://user-images.githubusercontent.com/54073761/132977696-4199decf-c0b8-4320-b73b-f544605e0202.png)
 
 ### allow-headers
 
@@ -78,8 +78,8 @@ withCredentials 값을 true로 변경시 몇가지 제약사항 추가됩니다.
 
 withCredentials= true 설정하고 서버 응답 해더에 Access-Control-Allow-Credentials=true가 없다면 아래와 같은 에러가 납니다.
 
-![스크린샷 2021-08-18 오전 2.04.39.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/712270a8-5d70-435e-b32a-beaf63058086/스크린샷_2021-08-18_오전_2.04.39.png)
+![](https://user-images.githubusercontent.com/54073761/132977720-21809525-de88-4ffa-af42-54a849f45870.png)
 
 서버에서 정상적으로 해더정보를 내려주면 아래와 같이 CORS가 성공하게 됩니다. Response Headers 부분을 유념해서 보시면 됩니다.
 
-![스크린샷 2021-08-18 오전 2.06.37.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/30e1b5de-5716-4140-85e3-563c7e2d85ee/스크린샷_2021-08-18_오전_2.06.37.png)
+![](https://user-images.githubusercontent.com/54073761/132977714-19606a9f-c582-4b70-b2f4-c38fc17206a8.png)
